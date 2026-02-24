@@ -4,6 +4,8 @@ import { createPageUrl } from "@/utils";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const LOGO_URL = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699db1c3be9861723766da7c/8bf31c57a_212727517_padded_logo.png";
+
 export default function Navbar({ variant = "transparent" }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,27 +21,33 @@ export default function Navbar({ variant = "transparent" }) {
 
   return (
     <nav
+      dir="rtl"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isOpaque
-          ? "bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+        isOpaque ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to={createPageUrl("Home")} className="text-xl font-bold">
-          <span className={isOpaque ? "text-[#2D5A3D]" : "text-white"}>WE</span>
-          <span className="text-[#E8722A]">DOG</span>
+        <Link to={createPageUrl("Home")}>
+          <img src={LOGO_URL} alt="WEDOG" className="h-10 w-10 rounded-lg object-cover" />
         </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href={variant === "solid" ? createPageUrl("Home") + "#features" : "#features"}
+            href={variant === "solid" ? createPageUrl("Home") + "#services" : "#services"}
             className={`text-sm font-medium transition-colors ${
               isOpaque ? "text-gray-600 hover:text-[#2D5A3D]" : "text-white/80 hover:text-white"
             }`}
           >
-            Features
+            השירותים שלנו
+          </a>
+          <a
+            href={variant === "solid" ? createPageUrl("Home") + "#download" : "#download"}
+            className={`text-sm font-medium transition-colors ${
+              isOpaque ? "text-gray-600 hover:text-[#2D5A3D]" : "text-white/80 hover:text-white"
+            }`}
+          >
+            האפליקציה
           </a>
           <Link
             to={createPageUrl("PrivacyPolicy")}
@@ -47,13 +55,13 @@ export default function Navbar({ variant = "transparent" }) {
               isOpaque ? "text-gray-600 hover:text-[#2D5A3D]" : "text-white/80 hover:text-white"
             }`}
           >
-            Privacy
+            מדיניות פרטיות
           </Link>
           <a
-            href="#download"
-            className="px-5 py-2 bg-[#E8722A] text-white text-sm font-semibold rounded-full hover:bg-[#d4641f] transition-colors shadow-md shadow-[#E8722A]/20"
+            href="#contact"
+            className="px-5 py-2 bg-[#2D5A3D] text-white text-sm font-semibold rounded-full hover:bg-[#3A7550] transition-colors shadow-md"
           >
-            Get the App
+            צרו קשר
           </a>
         </div>
 
@@ -75,27 +83,34 @@ export default function Navbar({ variant = "transparent" }) {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-t overflow-hidden"
           >
-            <div className="px-6 py-4 space-y-3">
+            <div className="px-6 py-4 space-y-3 text-right">
               <a
-                href={variant === "solid" ? createPageUrl("Home") + "#features" : "#features"}
+                href="#services"
                 onClick={() => setMenuOpen(false)}
                 className="block text-gray-700 font-medium py-2"
               >
-                Features
+                השירותים שלנו
+              </a>
+              <a
+                href="#download"
+                onClick={() => setMenuOpen(false)}
+                className="block text-gray-700 font-medium py-2"
+              >
+                האפליקציה
               </a>
               <Link
                 to={createPageUrl("PrivacyPolicy")}
                 onClick={() => setMenuOpen(false)}
                 className="block text-gray-700 font-medium py-2"
               >
-                Privacy Policy
+                מדיניות פרטיות
               </Link>
               <a
-                href="#download"
+                href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="block w-full text-center px-5 py-3 bg-[#E8722A] text-white font-semibold rounded-full"
+                className="block w-full text-center px-5 py-3 bg-[#2D5A3D] text-white font-semibold rounded-full"
               >
-                Get the App
+                צרו קשר
               </a>
             </div>
           </motion.div>

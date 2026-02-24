@@ -4,15 +4,15 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden" dir="rtl">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1920&q=80"
-          alt="Dogs running together"
+          alt="כלבים רצים יחד"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/70 via-[#2D5A3D]/50 to-[#FAF8F5]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/80 via-[#2D5A3D]/60 to-[#FAF8F5]" />
       </div>
 
       {/* Content */}
@@ -23,35 +23,42 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <div className="mb-6">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium tracking-wide">
-              PREMIUM DOG CARE · TEL AVIV
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium">
+              טיולי כלבים ואילוף פרמיום · תל אביב
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6">
-            WE<span className="text-[#E8722A]">DOG</span>
-          </h1>
+          <div className="flex justify-center mb-6">
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699db1c3be9861723766da7c/8bf31c57a_212727517_padded_logo.png"
+              alt="WEDOG"
+              className="h-28 w-28 rounded-2xl shadow-2xl"
+            />
+          </div>
 
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">
+            הכלב שלך מגיע לטוב ביותר
+          </h1>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl mx-auto mb-10 font-light">
-            Professional dog walking & training — where every walk is an adventure and every dog is part of the pack.
+            טיולי להקה, אילוף קבוצתי ואילוף פרטי — חוויה שלמה לכלב שלך ושקט נפשי בשבילך.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <motion.a
+              href="#services"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#2D5A3D] font-bold rounded-full text-lg shadow-lg hover:bg-gray-50 transition-colors"
+            >
+              הכירו את השירותים שלנו
+            </motion.a>
             <motion.a
               href="#download"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#E8722A] text-white font-semibold rounded-full text-lg shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors"
             >
-              Download the App
-            </motion.a>
-            <motion.a
-              href="#features"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 backdrop-blur-sm text-white font-medium rounded-full text-lg border border-white/30 hover:bg-white/25 transition-colors"
-            >
-              Learn More
+              הורידו את האפליקציה
             </motion.a>
           </div>
         </motion.div>
@@ -62,8 +69,8 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 0.8 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <a href="#features">
-            <ArrowDown className="w-6 h-6 text-[#2D5A3D] animate-bounce" />
+          <a href="#services">
+            <ArrowDown className="w-6 h-6 text-white/70 animate-bounce" />
           </a>
         </motion.div>
       </div>
