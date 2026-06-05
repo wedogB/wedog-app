@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Clock, Timer, Users, Smartphone } from "lucide-react";
 import Navbar from "@/components/wedog/Navbar";
 import Footer from "@/components/wedog/Footer";
+import Gallery from "@/components/wedog/Gallery";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -179,10 +180,20 @@ export default function WedogPack() {
         </div>
       </section>
 
-      {/* 3. מה מקבלים - טאבים */}
+      {/* 3. גלריית תמונות */}
+      <Gallery images={[
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/036a2cc21_WhatsAppImage2026-06-05at20518PM.jpg",
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/26c37c4c0_WhatsAppImage2026-06-04at23835PM1.jpg",
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/50cb8e6cd_WhatsAppImage2026-06-04at23835PM.jpg",
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/8e6875b87_WhatsAppImage2026-06-04at23834PM.jpg",
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/0f671853e_WhatsAppImage2026-06-05at20518PM2.jpg",
+        "https://media.base44.com/images/public/699db1c3be9861723766da7c/c1c7a3564_WhatsAppImage2026-06-05at20518PM1.jpg"
+      ]} />
+
+      {/* 4. מה מקבלים - טאבים */}
       <BenefitsTabs />
 
-      {/* 4. למה WEDOG */}
+      {/* 5. למה WEDOG */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <motion.div
@@ -216,7 +227,7 @@ export default function WedogPack() {
         </div>
       </section>
 
-      {/* 5. תהליך הקבלה */}
+      {/* 6. תהליך הקבלה */}
       <section className="py-20 px-6 bg-[#FAF8F5]">
         <div className="max-w-3xl mx-auto">
           <motion.div
@@ -260,7 +271,7 @@ export default function WedogPack() {
         </div>
       </section>
 
-      {/* 6. CTA סופי */}
+      {/* 7. CTA סופי */}
       <section id="contact-cta" className="py-24 px-6 bg-[#2D5A3D] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-[#3A7550]/30 rounded-full translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3A7550]/20 rounded-full -translate-x-1/3 translate-y-1/3" />
