@@ -80,7 +80,7 @@ function BenefitsTabs() {
                 <p className="text-white/85 text-base leading-relaxed">בלי שתצטרכו לפרוק לו אנרגיה אחרי יום עבודה ארוך.</p>
               </div>
               <div>
-                <p className="text-white font-bold text-xl mb-2">חוסכים לכם פריקת אנרגיה וטיול צהריים</p>
+                <p className="text-white font-bold mb-2 text-base">חוסכים לכם פריקת אנרגיה וטיול צהריים</p>
                 <ul className="text-white/85 text-base leading-relaxed space-y-1">
                   <li>בלי טיול בוקר בחושך</li>
                   <li>בלי לחזור בצהריים באמצע יום עבודה</li>
