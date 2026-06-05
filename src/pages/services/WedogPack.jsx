@@ -144,6 +144,14 @@ export default function WedogPack() {
       {/* 2. פרטי השירות */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
+          <div className="mb-8 flex gap-2 justify-center">
+            <button className="px-6 py-2 bg-[#2D5A3D] text-white rounded-full font-semibold text-sm">
+              להקת מרכז תל אביב
+            </button>
+            <button disabled className="px-6 py-2 bg-gray-200 text-gray-400 rounded-full font-semibold text-sm cursor-not-allowed">
+              בקרוב עוד להקות
+            </button>
+          </div>
           <motion.div
             variants={stagger}
             initial="hidden"
@@ -152,8 +160,8 @@ export default function WedogPack() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {[
             { icon: MapPin, text: "קלישר, שינקין, רוטשילד, לבונטין, נווה צדק, קריית ספר", label: "אזור פעילות" },
-            { icon: Clock, text: "8:30–10:00", label: "איסופים" },
-            { icon: Timer, text: "3–2 שעות", label: "משך טיול" },
+            { icon: Clock, text: "10:00 - 8:30", label: "איסופים" },
+            { icon: Timer, text: "3 - 2 שעות", label: "משך טיול" },
             { icon: Users, text: "עד 10 כלבים למוליך", label: "גודל קבוצה" },
             { icon: Smartphone, text: "שריון דרך אפליקציה ייחודית", label: "הזמנה" }].
             map((item) =>
