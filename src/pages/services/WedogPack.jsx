@@ -40,10 +40,10 @@ export default function WedogPack() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-20">
           
-          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
-            יש כלבים שמטיילים פעמיים ביום,
-            <br />
-            <span className="text-[#a8d5b5] text-justify">ויש כלבים שיוצאים עם הלהקה.</span>
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">יש כלבים שמטיילים פעמיים ביום,
+ויש כלבים שיוצאים עם הלהקה.
+
+
           </h1>
           <div className="text-white/80 text-base leading-relaxed max-w-2xl mx-auto mb-4 space-y-1">
             <div>להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ -</div>
