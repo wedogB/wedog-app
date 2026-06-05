@@ -36,12 +36,12 @@ export default function Hero() {
             
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4 hidden">
-            הכלב שלך מגיע לטוב ביותר
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl mx-auto mb-10 font-light hidden">
-            טיולי להקה, אילוף קבוצתי ואילוף פרטי — חוויה שלמה לכלב שלך ושקט נפשי בשבילך.
-          </p>
+          
+
+          
+          
+
+          
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <motion.a
@@ -52,16 +52,16 @@ export default function Hero() {
               
               הכירו את השירותים שלנו
             </motion.a>
-            <motion.a
-              href="https://wa.me/972542828889?text=היי%21%20אני%20רוצה%20להצטרף%20ללהקה%20%F0%9F%90%95"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#E8722A] text-white font-semibold rounded-full text-lg shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors hidden">
-              
-              הורידו את האפליקציה
-            </motion.a>
+            
+
+
+
+
+
+
+
+
+            
           </div>
         </motion.div>
 
