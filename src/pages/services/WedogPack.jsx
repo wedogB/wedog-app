@@ -259,14 +259,14 @@ export default function WedogPack() {
       </section>
 
       {/* 7. מחיר */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-white hidden">
         <div className="max-w-lg mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm">
+            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm hidden">
             
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4">
               תמחור
