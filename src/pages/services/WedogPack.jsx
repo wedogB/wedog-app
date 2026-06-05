@@ -110,9 +110,9 @@ export default function WedogPack() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
             
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3 hidden">
-              מה בתוך הטיול
-            </span>
+            
+
+            
             <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D]">מה הכלב מקבל</h2>
           </motion.div>
           <motion.div
@@ -151,9 +151,9 @@ export default function WedogPack() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}>
             
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-6 hidden">
-              בשבילכם
-            </span>
+            
+
+            
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">מה אתם מקבלים</h2>
             <div className="text-white/85 text-lg leading-relaxed space-y-4 text-right">
               <p>כלב שחוזר הביתה עייף ומאושר — בלי שתצטרכו לפרוק לו אנרגיה אחרי יום עבודה ארוך.</p>
@@ -214,9 +214,9 @@ export default function WedogPack() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
             
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3 hidden">
-              הצטרפות ללהקה
-            </span>
+            
+
+            
             <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D]">איך מצטרפים?</h2>
           </motion.div>
           <motion.div
@@ -259,24 +259,24 @@ export default function WedogPack() {
       </section>
 
       {/* 7. מחיר */}
-      <section className="py-16 px-6 bg-white hidden">
-        <div className="max-w-lg mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm hidden">
-            
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4">
-              תמחור
-            </span>
-            <div className="text-5xl font-bold text-[#2D5A3D] mb-2">82₪–105₪</div>
-            <p className="text-gray-500 mb-2">לטיול בהתאם לכמות הפעמים בחודש</p>
-            <p className="text-gray-400 text-sm">כרטיסיות זמינות דרך האפליקציה</p>
-          </motion.div>
-        </div>
-      </section>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
       {/* 8. CTA סופי */}
       <section id="contact-cta" className="py-24 px-6 bg-[#2D5A3D] relative overflow-hidden">
