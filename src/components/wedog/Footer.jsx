@@ -15,8 +15,9 @@ export default function Footer() {
               alt="WEDOG"
               className="h-12 w-auto mb-4"
             />
+            <h3 className="text-white font-bold text-sm mb-3">WEDOG - Urban Dog Training</h3>
             <p className="text-white/60 leading-relaxed text-sm">
-              טיולי כלבים ואילוף פרמיום בתל אביב. כי הכלב שלך מגיע לטוב ביותר.
+              טיולי כלבים ואילופים בגישה של פיתוח שפה משותפת בין הבעלים לכלב. אנחנו מאמינים ביצירת תקשורת, אמון ועבודת צוות.
             </p>
           </div>
 
@@ -30,15 +31,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-white/70 text-sm">
                 <Phone className="w-4 h-4 text-[#3A7550] flex-shrink-0" />
-                050-000-0000
+                <a href="tel:0542828889" className="hover:text-white transition-colors">0542828889</a>
               </li>
               <li className="flex items-center gap-3 text-white/70 text-sm">
                 <Mail className="w-4 h-4 text-[#3A7550] flex-shrink-0" />
-                hello@wedog.co.il
+                <a href="mailto:barak.rozenbaum@gmail.com" className="hover:text-white transition-colors">barak.rozenbaum@gmail.com</a>
               </li>
               <li className="flex items-center gap-3 text-white/70 text-sm">
                 <Instagram className="w-4 h-4 text-[#3A7550] flex-shrink-0" />
-                @wedog.tlv
+                <a href="https://instagram.com/barak_dogtrainer" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@barak_dogtrainer</a>
               </li>
             </ul>
           </div>
