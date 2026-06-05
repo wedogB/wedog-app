@@ -45,7 +45,7 @@ export default function WedogPack() {
             <br />
             <span className="text-[#a8d5b5]">ויש כלבים שיוצאים עם הלהקה.</span>
           </h1>
-          <div className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4 space-y-1">
+          <div className="text-white/80 text-base leading-relaxed max-w-2xl mx-auto mb-4 space-y-1">
             <div>להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ -</div>
             <div>פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,</div>
             <div>וכלב שחוזר הביתה עייף ומרוצה.</div>
