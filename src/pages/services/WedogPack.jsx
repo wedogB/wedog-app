@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Clock, Timer, Users, Smartphone } from "lucide-react";
 import Navbar from "@/components/wedog/Navbar";
 import Footer from "@/components/wedog/Footer";
@@ -44,53 +44,56 @@ function BenefitsTabs() {
           </div>
         </motion.div>
 
-        {activeTab === "dog" &&
-        <motion.div
-          key="dog"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[
-          { title: "פריקה פיזית", desc: "7 ק\"מ של הליכה אמיתית עם חברה טובה" },
-          { title: "פריקה מנטלית", desc: "הליכה בקבוצה, התעלמות מגירויים, Recall, איפוק, אכילה מהרצפה" },
-          { title: "סוציאליזציה", desc: "חבורה קבועה, שחרור בגינה, תקשורת בריאה עם כלבים אחרים" },
-          { title: "אילוף בדרך", desc: "כי למה לא להפיק יותר מכל טיול" }].
-          map((card) =>
-          <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm border border-[#F5EDE4] hover:shadow-lg transition-shadow duration-300">
-                <div className="w-2 h-8 bg-[#2D5A3D] rounded-full mb-4" />
-                <h3 className="text-xl font-bold text-[#2D5A3D] mb-2">{card.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{card.desc}</p>
-              </div>
+        <AnimatePresence mode="wait">
+          {activeTab === "dog" && (
+            <motion.div
+              key="dog"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.3 }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                { title: "פריקה פיזית", desc: "7 ק\"מ של הליכה אמיתית עם חברה טובה" },
+                { title: "פריקה מנטלית", desc: "הליכה בקבוצה, התעלמות מגירויים, Recall, איפוק, אכילה מהרצפה" },
+                { title: "סוציאליזציה", desc: "חבורה קבועה, שחרור בגינה, תקשורת בריאה עם כלבים אחרים" },
+                { title: "אילוף בדרך", desc: "כי למה לא להפיק יותר מכל טיול" }
+              ].map((card) => (
+                <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm border border-[#F5EDE4] hover:shadow-lg transition-shadow duration-300">
+                  <div className="w-2 h-8 bg-[#2D5A3D] rounded-full mb-4" />
+                  <h3 className="text-xl font-bold text-[#2D5A3D] mb-2">{card.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{card.desc}</p>
+                </div>
+              ))}
+            </motion.div>
           )}
-          </motion.div>
-        }
-
-        {activeTab === "owner" &&
-        <motion.div
-          key="owner"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="bg-[#2D5A3D] rounded-3xl p-10 md:p-14 text-right space-y-8">
-            <div>
-              <p className="text-white font-bold text-xl mb-2">כלב שחוזר הביתה עייף ומאושר</p>
-              <p className="text-white/85 text-base leading-relaxed">בלי שתצטרכו לפרוק לו אנרגיה אחרי יום עבודה ארוך.</p>
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl mb-2">חוסכים לכם פריקת אנרגיה וטיול צהריים</p>
-              <ul className="text-white/85 text-base leading-relaxed space-y-1">
-                <li>בלי טיול בוקר בחושך</li>
-                <li>בלי לחזור בצהריים באמצע יום עבודה</li>
-                <li>בלי לפרוק אנרגיה אחרי שחוזרים מיום עבודה ארוך</li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl mb-2">ראש שקט — הוא בידיים טובות</p>
-              <p className="text-white/85 text-base leading-relaxed">עדכונים שבועיים, תמונות בלייב ועוד המון מידע באפליקציה.</p>
-            </div>
-          </motion.div>
-        }
+          {activeTab === "owner" && (
+            <motion.div
+              key="owner"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.3 }}
+              className="bg-[#2D5A3D] rounded-3xl p-10 md:p-14 text-right space-y-8">
+              <div>
+                <p className="text-white font-bold text-xl mb-2">כלב שחוזר הביתה עייף ומאושר</p>
+                <p className="text-white/85 text-base leading-relaxed">בלי שתצטרכו לפרוק לו אנרגיה אחרי יום עבודה ארוך.</p>
+              </div>
+              <div>
+                <p className="text-white font-bold text-xl mb-2">חוסכים לכם פריקת אנרגיה וטיול צהריים</p>
+                <ul className="text-white/85 text-base leading-relaxed space-y-1">
+                  <li>בלי טיול בוקר בחושך</li>
+                  <li>בלי לחזור בצהריים באמצע יום עבודה</li>
+                  <li>בלי לפרוק אנרגיה אחרי שחוזרים מיום עבודה ארוך</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-white font-bold text-xl mb-2">ראש שקט — הוא בידיים טובות</p>
+                <p className="text-white/85 text-base leading-relaxed">עדכונים שבועיים, תמונות בלייב ועוד המון מידע באפליקציה.</p>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>);
 
