@@ -32,7 +32,7 @@ export default function WedogPack() {
           >
             <source src="https://media.base44.com/videos/public/699db1c3be9861723766da7c/204c13c00_WhatsAppVideo2026-06-05at20517PM.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0" style={{background: "linear-gradient(to bottom, rgba(30,63,43,0.95) 0%, rgba(45,90,61,0.92) 70%, rgba(250,248,245,1) 100%)"}} />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/80 via-[#2D5A3D]/65 to-[#FAF8F5]" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
