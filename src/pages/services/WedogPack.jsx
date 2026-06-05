@@ -78,8 +78,8 @@ function BenefitsTabs() {
             <p className="text-white/85 leading-relaxed text-base">כלב שחוזר הביתה עייף ומאושר - בלי שתצטרכו לפרוק לו אנרגיה אחרי יום עבודה ארוך.</p>
             <p className="text-white/85 leading-relaxed text-base">בלי טיול בוקר בחושך. 
 בלי לחזור בצהריים באמצע יום עבודה.</p>
-            <p className="text-white font-semibold text-base">סוף סוף ראש שקט - הוא בידיים טובות.
-עדכונים שבועיים, תמונות בלייב ועוד המון מידע באפליקציה</p>
+            <p className="text-white text-base font-normal">ראש שקט - הוא בידיים טובות. עדכונים שבועיים, תמונות בלייב ועוד המון מידע באפליקציה
+          </p>
           </motion.div>}
       </div>
     </section>);
