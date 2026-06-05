@@ -180,7 +180,10 @@ export default function WedogPack() {
         </div>
       </section>
 
-      {/* 3. גלריית תמונות */}
+      {/* 3. מה מקבלים - טאבים */}
+      <BenefitsTabs />
+
+      {/* 4. גלריית תמונות */}
       <Gallery images={[
         "https://media.base44.com/images/public/699db1c3be9861723766da7c/036a2cc21_WhatsAppImage2026-06-05at20518PM.jpg",
         "https://media.base44.com/images/public/699db1c3be9861723766da7c/26c37c4c0_WhatsAppImage2026-06-04at23835PM1.jpg",
@@ -189,9 +192,6 @@ export default function WedogPack() {
         "https://media.base44.com/images/public/699db1c3be9861723766da7c/0f671853e_WhatsAppImage2026-06-05at20518PM2.jpg",
         "https://media.base44.com/images/public/699db1c3be9861723766da7c/c1c7a3564_WhatsAppImage2026-06-05at20518PM1.jpg"
       ]} />
-
-      {/* 4. מה מקבלים - טאבים */}
-      <BenefitsTabs />
 
       {/* 5. למה WEDOG */}
       <section className="py-20 px-6 bg-white">
