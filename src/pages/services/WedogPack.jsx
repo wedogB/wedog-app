@@ -78,7 +78,7 @@ export default function WedogPack() {
             {[
             { icon: MapPin, text: "קלישר, שינקין, רוטשילד, לבונטין, נווה צדק, קריית ספר", label: "אזור פעילות" },
             { icon: Clock, text: "8:30–10:00", label: "איסופים" },
-            { icon: Timer, text: "2–3 שעות", label: "משך טיול" },
+            { icon: Timer, text: "3–2 שעות", label: "משך טיול" },
             { icon: Users, text: "עד 10 כלבים למוליך", label: "גודל קבוצה" },
             { icon: Smartphone, text: "שריון דרך אפליקציה ייחודית", label: "הזמנה" }].
             map((item) =>
