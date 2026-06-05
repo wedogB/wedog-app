@@ -7,6 +7,7 @@ import PageNotFound from './lib/PageNotFound';
 import ServiceDetail from './pages/ServiceDetail';
 import WedogPack from './pages/services/WedogPack';
 import Training from './pages/services/Training';
+import EliWorkshop from './pages/services/EliWorkshop';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -62,6 +63,7 @@ const AuthenticatedApp = () => {
       ))}
       <Route path="/service/wedog-pack" element={<LayoutWrapper currentPageName="WedogPack"><WedogPack /></LayoutWrapper>} />
       <Route path="/service/training" element={<LayoutWrapper currentPageName="Training"><Training /></LayoutWrapper>} />
+      <Route path="/service/eli-workshop" element={<LayoutWrapper currentPageName="EliWorkshop"><EliWorkshop /></LayoutWrapper>} />
       <Route path="/service/:serviceId" element={<LayoutWrapper currentPageName="ServiceDetail"><ServiceDetail /></LayoutWrapper>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
