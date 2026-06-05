@@ -10,8 +10,8 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1920&q=80"
           alt="כלבים רצים יחד"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
+        
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/80 via-[#2D5A3D]/60 to-[#FAF8F5]" />
       </div>
 
@@ -20,8 +20,8 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           <div className="mb-6">
             <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium">
               טיולי כלבים ואילוף פרמיום · תל אביב
@@ -32,14 +32,14 @@ export default function Hero() {
             <img
               src="https://media.base44.com/images/public/699db1c3be9861723766da7c/a1a7f4e57_Colorlogo-nobackground.png"
               alt="WEDOG"
-              className="h-20 w-auto drop-shadow-2xl"
-            />
+              className="h-20 w-auto drop-shadow-2xl" />
+            
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4 hidden">
             הכלב שלך מגיע לטוב ביותר
           </h1>
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl mx-auto mb-10 font-light">
+          <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl mx-auto mb-10 font-light hidden">
             טיולי להקה, אילוף קבוצתי ואילוף פרטי — חוויה שלמה לכלב שלך ושקט נפשי בשבילך.
           </p>
 
@@ -48,8 +48,8 @@ export default function Hero() {
               href="#services"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#2D5A3D] font-bold rounded-full text-lg shadow-lg hover:bg-gray-50 transition-colors"
-            >
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#2D5A3D] font-bold rounded-full text-lg shadow-lg hover:bg-gray-50 transition-colors">
+              
               הכירו את השירותים שלנו
             </motion.a>
             <motion.a
@@ -58,8 +58,8 @@ export default function Hero() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#E8722A] text-white font-semibold rounded-full text-lg shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors"
-            >
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#E8722A] text-white font-semibold rounded-full text-lg shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors hidden">
+              
               הורידו את האפליקציה
             </motion.a>
           </div>
@@ -69,13 +69,13 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
+          className="absolute bottom-8 left-1/2 -translate-x-1/2">
+          
           <a href="#services">
             <ArrowDown className="w-6 h-6 text-white/70 animate-bounce" />
           </a>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
