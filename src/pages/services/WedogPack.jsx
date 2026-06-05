@@ -45,18 +45,15 @@ export default function WedogPack() {
             <br />
             <span className="text-[#a8d5b5]">ויש כלבים שיוצאים עם הלהקה.</span>
           </h1>
-          <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4">להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ - פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,
-וכלב שחוזר הביתה עייף ומרוצה.
-
-
-
-
-          </p>
-          <p className="text-white font-semibold text-xl mb-10">
-            הכלב שלכם לא צריך עוד טיול,
-            <br />
-            הוא צריך WEDOG 💚
-          </p>
+          <div className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4 space-y-1">
+            <div>להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ -</div>
+            <div>פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,</div>
+            <div>וכלב שחוזר הביתה עייף ומרוצה.</div>
+          </div>
+          <div className="text-white font-semibold text-xl mb-10 space-y-1">
+            <div>הכלב שלכם לא צריך עוד טיול,</div>
+            <div>הוא צריך WEDOG 💚</div>
+          </div>
           <motion.a
             href="#contact-cta"
             whileHover={{ scale: 1.05 }}
