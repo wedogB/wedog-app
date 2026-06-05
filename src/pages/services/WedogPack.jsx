@@ -41,15 +41,21 @@ export default function WedogPack() {
           className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-20"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-            יש כלבים שמטיילים פעמיים ביום.
+            יש כלבים שמטיילים פעמיים ביום,
             <br />
             <span className="text-[#a8d5b5]">ויש כלבים שיוצאים עם הלהקה.</span>
           </h1>
           <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4">
-            להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ — פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך, וכלב שחוזר הביתה עייף ומרוצה.
+            להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ -
+            <br />
+            פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,
+            <br />
+            וכלב שחוזר הביתה עייף ומרוצה.
           </p>
           <p className="text-white font-semibold text-xl mb-10">
-            הכלב שלכם לא צריך עוד טיול. הוא צריך WEDOG. 💚
+            הכלב שלכם לא צריך עוד טיול,
+            <br />
+            הוא צריך WEDOG 💚
           </p>
           <motion.a
             href="#contact-cta"
@@ -57,7 +63,7 @@ export default function WedogPack() {
             whileTap={{ scale: 0.97 }}
             className="inline-block px-10 py-4 bg-[#E8722A] text-white font-bold text-lg rounded-full shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors"
           >
-            אני רוצה שהכלב שלי יצטרף
+            תרשמו אותי עכשיו
           </motion.a>
         </motion.div>
       </section>
