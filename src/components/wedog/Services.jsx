@@ -1,38 +1,47 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { Users, Brain, GraduationCap, Home } from "lucide-react";
 
 const services = [
   {
-    slug: "pack",
-    title: "להקת WEDOG",
+    icon: Users,
+    tag: "טיול להקה",
+    title: "טיולי להקה במרכז תל אביב",
     description:
-      "יש כלבים שמטיילים פעמיים ביום,\nויש כלבים שיוצאים עם הלהקה.\nלהקת WEDOG יוצאת כל יום לטיול של 7 ק\"מ - פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך וכלב שחוזר הביתה עייף ומרוצה.\nהכלב שלכם לא צריך עוד טיול. הוא צריך WEDOG",
+      "טיולים קבוצתיים יומיומיים במרכז תל אביב המשלבים פריקה פיזית ומנטלית מלאה. הכלבים לומדים איפוק, תקשורת בין-כלבית ועבודה עם ויזואליזציה.",
+    color: "bg-[#2D5A3D]",
+    lightColor: "bg-[#2D5A3D]/8",
+    iconColor: "text-[#2D5A3D]",
   },
   {
-    slug: "training",
-    title: "אילוף ופתרון בעיות התנהגות",
+    icon: GraduationCap,
+    tag: "אילוף קבוצתי",
+    title: "שיעורי אילוף בקבוצות",
     description:
-      "הכלב שלכם לא סרבן. הוא פשוט לא מבין מה אתם רוצים.\nרוב הבעיות שאני רואה הן לא בעיות של הכלב - הן בעיות של שפה.\nבWEDOG אנחנו עובדים עם בעלים וכלבים יחד ליצור שפה משותפת, להבין מה הכלב מנסה להגיד וללמוד איך להגיד לו.\nככה אנחנו מגיעים לתוצאה של תקשורת נכונה, הובלה בריאה ועבודת צוות הדדית.",
+      "שיעורים בקבוצות קטנות ואינטימיות לבניית מנגנוני תגובה חיוביים ועבודה על פקודות בסיסיות ומתקדמות בסביבה מגרה ומהנה.",
+    color: "bg-[#3A7550]",
+    lightColor: "bg-[#3A7550]/8",
+    iconColor: "text-[#3A7550]",
   },
   {
-    slug: "ali",
-    title: 'סדנת "אלי"',
+    icon: Home,
+    tag: "אילוף פרטי",
+    title: "שיעורי אילוף פרטיים בבית",
     description:
-      "חודש וקצת - פקודה אחת מושלמת.\nלכל כלב מכל רמה.",
+      "אילוף אישי ומותאם בסביבה הטבעית של הכלב — בבית הלקוח. הפתרון הטוב ביותר לטיפול בבעיות התנהגות ספציפיות ולבניית קשר עמוק בין הכלב לבעלים.",
+    color: "bg-[#2D5A3D]",
+    lightColor: "bg-[#2D5A3D]/8",
+    iconColor: "text-[#2D5A3D]",
   },
   {
-    slug: "wedding",
-    title: "ליווי חתונות",
+    icon: Brain,
+    tag: "גישה מקצועית",
+    title: "פריקה מנטלית ואיפוק",
     description:
-      "יום החתונה צריך להיות מושלם - גם בשביל הכלב. \nאנחנו דואגים לכלב מהערב שלפני, דרך הצילומים והחופה, ועד שאתם מגיעים לאסוף אותו הביתה. חבילת ליווי חתונות בנויה כך שתוכלו להתעסק רק בלשמוח ולהישאר בראש שקט.",
-  },
-  {
-    slug: "puppies",
-    title: "חינוך גורים",
-    description:
-      "יש גורים שגדלים להיות כלבים עם בעיות - ויש גורים שגדלים להיות כלבים שיודעים מי הם.\nההפרש ביניהם הוא הבסיס שנבנה בחודשים הראשונים.\nבWEDOG אנחנו מלמדים בעלי גורים לבנות שפה משותפת מהיום הראשון - להבין את הפסיכולוגיה של הכלב, שפה כלבית, איך מתמודדים עם בעיות קלאסיות של גורים ואיך בונין בסיס נכון שיכול למנוע בעיות לפני שהן בכלל מתפתחות.",
+      "מעבר לטיול רגיל — אנחנו עובדים על הצד המנטלי של הכלב: ריכוז, וויסות עצמי, ויזואליזציה ותקשורת. כלב מאוזן הוא כלב שמח.",
+    color: "bg-[#3A7550]",
+    lightColor: "bg-[#3A7550]/8",
+    iconColor: "text-[#3A7550]",
   },
 ];
 
@@ -77,25 +86,24 @@ export default function Services() {
         >
           {services.map((service) => (
             <motion.div
-              key={service.slug}
+              key={service.title}
               variants={cardVariants}
-              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-[#F5EDE4] overflow-hidden flex flex-col"
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-[#F5EDE4] overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-40 h-40 bg-[#3A7550]/4 rounded-full -translate-y-16 -translate-x-16 group-hover:scale-150 transition-transform duration-700" />
 
-              <div className="relative z-10 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-[#2D5A3D] mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-[15px] whitespace-pre-line flex-1">
-                  {service.description}
-                </p>
-                <div className="mt-6">
-                  <Link
-                    to={`/service/${service.slug}`}
-                    className="inline-flex items-center gap-2 text-[#2D5A3D] font-semibold text-sm border border-[#2D5A3D] px-5 py-2.5 rounded-full hover:bg-[#2D5A3D] hover:text-white transition-all duration-300"
-                  >
-                    פרטים נוספים
-                    <ArrowLeft className="w-4 h-4" />
-                  </Link>
+              <div className="relative z-10">
+                <div className="flex items-start gap-5">
+                  <div className={`w-14 h-14 rounded-xl ${service.lightColor} flex items-center justify-center flex-shrink-0`}>
+                    <service.icon className={`w-7 h-7 ${service.iconColor}`} />
+                  </div>
+                  <div>
+                    <span className={`inline-block text-xs font-semibold ${service.iconColor} bg-[#2D5A3D]/8 px-3 py-1 rounded-full mb-2`}>
+                      {service.tag}
+                    </span>
+                    <h3 className="text-xl font-bold text-[#2D5A3D] mb-3">{service.title}</h3>
+                    <p className="text-gray-600 leading-relaxed text-[15px]">{service.description}</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
