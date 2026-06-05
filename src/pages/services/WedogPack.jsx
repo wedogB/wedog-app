@@ -60,7 +60,7 @@ function BenefitsTabs() {
             { title: "אילוף בדרך", desc: "כי למה לא להפיק יותר מכל טיול" }].
             map((card) =>
             <div key={card.title} className="bg-white rounded-2xl p-5 shadow-sm border border-[#F5EDE4] hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-2 h-6 bg-[#2D5A3D] rounded-full mb-3 hidden" />
+                  
                   <h3 className="text-base font-bold text-[#2D5A3D] mb-1">{card.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{card.desc}</p>
                 </div>
