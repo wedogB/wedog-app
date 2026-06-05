@@ -290,7 +290,7 @@ export default function WedogPack() {
           ownerName: "יהב",
           dogName: "דלי",
           text: "אנחנו שמחים מאוד להמליץ על הלהקה של WEDOG. מאז שהכלבים שלנו התחילו להגיע, הם חוזרים הביתה עייפים, רגועים ומסופקים. מעבר לפריקת האנרגיה, ראינו שיפור משמעותי בהתנהגות שלהם, יותר יכולת לדחות סיפוקים ויותר רוגע גם בבית וגם בטיולים.",
-          image: null
+          image: "https://media.base44.com/images/public/699db1c3be9861723766da7c/25df74fb9_WhatsAppImage2026-06-05at70907PM2.jpg"
         },
         {
           ownerName: "מתן",
