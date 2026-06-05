@@ -4,6 +4,7 @@ import { MapPin, Clock, Timer, Users, Smartphone } from "lucide-react";
 import Navbar from "@/components/wedog/Navbar";
 import Footer from "@/components/wedog/Footer";
 import Gallery from "@/components/wedog/Gallery";
+import Testimonials from "@/components/wedog/Testimonials";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -228,7 +229,7 @@ export default function WedogPack() {
       </section>
 
       {/* 6. תהליך הקבלה */}
-      <section className="py-20 px-6 bg-[#FAF8F5]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -271,8 +272,42 @@ export default function WedogPack() {
         </div>
       </section>
 
-      {/* 7. CTA סופי */}
-      <section id="contact-cta" className="py-24 px-6 bg-[#2D5A3D] relative overflow-hidden">
+      {/* 7. המלצות */}
+      <Testimonials testimonials={[
+        {
+          ownerName: "יעל",
+          dogName: "אפה",
+          text: "הלהקה עוזרת לי לדאוג ולפתח את הכלב שלי- הוא זוכה ליחס מהמם, לפריקת אנרגיה ואילוף בקבוצה, ולזמן עם כלבים נוספים כדי לרוץ ולעשות שטויות. העובדה שאני יודעת שהכלב שלי לא סתם שוכב בבית לבד אלא יש מישהו שדואג לו בזמן שאני בעבודה עוזרת לי לעבור את הימים האלו ברוגע 🙏🏼",
+          image: null
+        },
+        {
+          ownerName: "יעל",
+          dogName: "מיילי",
+          text: "מיילי יוצאת איתם לטיולים באופן קבוע וחוזרת כל פעם מאושרת, עייפה ומסופקת. מעבר לטיול עצמו, תמיד מרגיש שיש מי שרואה אותה באמת. אם משהו נראה חריג או אם היא לא מרגישה במיטבה, אני מיד מקבלת עדכון. הם דואגים לכל פרט קטן, ואני יודעת שהיא בידיים הכי טובות שיש. מה שמרשים אותי במיוחד הוא שלמרות שיש כל כך הרבה כלבים בלהקה, ברק מכיר כל אחד ואחת באופן אישי. הוא שם לב לפרטים, מבין את הצרכים של כל כלב, ונותן תחושה של יחס אישי ואכפתיות אמיתית. אין הרבה אנשים שהייתי סומכת עליהם בעיניים עצומות עם הכלבה שלי, אבל אתם בהחלט כאלה. ❤️🐶",
+          image: null
+        },
+        {
+          ownerName: "יהב",
+          dogName: "דלי",
+          text: "אנחנו שמחים מאוד להמליץ על הלהקה של WEDOG. מאז שהכלבים שלנו התחילו להגיע, הם חוזרים הביתה עייפים, רגועים ומסופקים. מעבר לפריקת האנרגיה, ראינו שיפור משמעותי בהתנהגות שלהם, יותר יכולת לדחות סיפוקים ויותר רוגע גם בבית וגם בטיולים.",
+          image: null
+        },
+        {
+          ownerName: "מתן",
+          dogName: "רובן",
+          text: "תודה לWEDOG! רובן זכה להכיר המון חברים חדשים ולפתח מיומנויות חברתיות בצורה מדהימה. מעבר לכל זה, החוויה שלי מול הצוות תמיד נעימה, מקצועית ומלאת אהבה לכלבים.",
+          image: null
+        },
+        {
+          ownerName: "רן",
+          dogName: "טוני",
+          text: "עברתי לא מעט דוג-ווקרים בעיר עד שמצאתי את WEDOG, ואין ספק שמדובר במשהו אחר לגמרי. בזמן שאני בעבודה, הכלב שלי לא רק יוצא לטיול. הוא פורק אנרגיה, משחק עם חברים מהלהקה וגם מתרגל משמעת. לפני WEDOG הייתי חוזר הביתה לכלב עם אנרגיות בלתי נגמרות והרבה פחות משמעת. כבר אחרי החודש הראשון הרגשתי שינוי משמעותי, והיום הוא רגוע יותר, קשוב יותר ומאוזן הרבה יותר. מה שמייחד את WEDOG הוא שהצוות מורכב ממאלפים מקצועיים. הם יודעים להתאים לכל כלב את מה שהוא צריך, וגם עם הכלב שלי, שלא תמיד היה פשוט, הם עשו עבודה מדהימה. בנוסף, אני לא צריך לדאוג לכום, אוספים את הכלב מהבית ומחזירים אותו בסוף הפעילות. הכי חשוב, הם זכו באמון שלי ב-100%, דבר שהיה לי קשה למצוא אצל דוג-ווקרים אחרים. מבחינתי WEDOG זה הרבה יותר מטיול לכלב זו מסגרת חברתית, פעילות, משמעת ושקט נפשי לבעלים. ממליץ בחום.",
+          image: null
+        }
+      ]} />
+
+      {/* 8. CTA סופי */}
+      <section id="contact-cta" className="py-24 px-6 bg-[#2D5A3D] relative overflow-hidden mt-20">
         <div className="absolute top-0 right-0 w-80 h-80 bg-[#3A7550]/30 rounded-full translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#3A7550]/20 rounded-full -translate-x-1/3 translate-y-1/3" />
         <motion.div
