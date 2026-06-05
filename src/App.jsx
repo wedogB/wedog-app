@@ -9,6 +9,7 @@ import WedogPack from './pages/services/WedogPack';
 import Training from './pages/services/Training';
 import EliWorkshop from './pages/services/EliWorkshop';
 import WeddingService from './pages/services/WeddingService';
+import PuppyTraining from './pages/services/PuppyTraining';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -66,6 +67,7 @@ const AuthenticatedApp = () => {
       <Route path="/service/training" element={<LayoutWrapper currentPageName="Training"><Training /></LayoutWrapper>} />
       <Route path="/service/eli-workshop" element={<LayoutWrapper currentPageName="EliWorkshop"><EliWorkshop /></LayoutWrapper>} />
       <Route path="/service/wedding" element={<LayoutWrapper currentPageName="WeddingService"><WeddingService /></LayoutWrapper>} />
+      <Route path="/service/puppy-training" element={<LayoutWrapper currentPageName="PuppyTraining"><PuppyTraining /></LayoutWrapper>} />
       <Route path="/service/:serviceId" element={<LayoutWrapper currentPageName="ServiceDetail"><ServiceDetail /></LayoutWrapper>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
