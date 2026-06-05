@@ -61,14 +61,14 @@ export default function EliWorkshop() {
       <Navbar variant="solid" />
 
       {/* 1. HERO */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=1920&q=80"
             alt="סדנת אלי"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/85 via-[#2D5A3D]/70 to-[#FAF8F5]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/90 via-[#2D5A3D]/85 via-70% to-[#FAF8F5]" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
