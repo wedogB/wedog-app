@@ -72,7 +72,7 @@ export default function WeddingService() {
             alt="חתונה עם כלב"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/95 via-[#2D5A3D]/90 via-70% to-[#FAF8F5]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/85 via-[#2D5A3D]/70 to-[#FAF8F5]" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
