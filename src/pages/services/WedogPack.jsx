@@ -23,11 +23,15 @@ export default function WedogPack() {
       {/* 1. HERO */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1920&q=80"
-            alt="להקת WEDOG"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-full object-cover"
-          />
+          >
+            <source src="https://media.base44.com/videos/public/699db1c3be9861723766da7c/204c13c00_WhatsAppVideo2026-06-05at20517PM.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/80 via-[#2D5A3D]/65 to-[#FAF8F5]" />
         </div>
         <motion.div
