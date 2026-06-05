@@ -53,7 +53,9 @@ export default function Hero() {
               הכירו את השירותים שלנו
             </motion.a>
             <motion.a
-              href="#download"
+              href="https://wa.me/972542828889?text=היי%21%20אני%20רוצה%20להצטרף%20ללהקה%20%F0%9F%90%95"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#E8722A] text-white font-semibold rounded-full text-lg shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors"
