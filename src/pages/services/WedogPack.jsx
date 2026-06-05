@@ -296,7 +296,7 @@ export default function WedogPack() {
           ownerName: "מתן",
           dogName: "רובן",
           text: "תודה לWEDOG! רובן זכה להכיר המון חברים חדשים ולפתח מיומנויות חברתיות בצורה מדהימה. מעבר לכל זה, החוויה שלי מול הצוות תמיד נעימה, מקצועית ומלאת אהבה לכלבים.",
-          image: null
+          image: "https://media.base44.com/images/public/699db1c3be9861723766da7c/0d9ef6d34_WhatsAppImage2026-06-05at70907PM1.jpg"
         },
         {
           ownerName: "רן",
