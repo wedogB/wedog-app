@@ -60,7 +60,7 @@ export default function Services() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4 hidden">
             מה אנחנו מציעים
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2D5A3D] leading-tight mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#2D5A3D] leading-tight mb-4 hidden">
             השירותים שלנו
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed hidden">
