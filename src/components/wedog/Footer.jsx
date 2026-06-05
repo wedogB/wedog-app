@@ -11,9 +11,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699db1c3be9861723766da7c/8bf31c57a_212727517_padded_logo.png"
+              src="https://media.base44.com/images/public/699db1c3be9861723766da7c/a1a7f4e57_Colorlogo-nobackground.png"
               alt="WEDOG"
-              className="h-14 w-14 rounded-xl mb-4"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-white/60 leading-relaxed text-sm">
               טיולי כלבים ואילוף פרמיום בתל אביב. כי הכלב שלך מגיע לטוב ביותר.

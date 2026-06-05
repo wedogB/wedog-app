@@ -30,9 +30,9 @@ export default function Hero() {
 
           <div className="flex justify-center mb-6">
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699db1c3be9861723766da7c/8bf31c57a_212727517_padded_logo.png"
+              src="https://media.base44.com/images/public/699db1c3be9861723766da7c/a1a7f4e57_Colorlogo-nobackground.png"
               alt="WEDOG"
-              className="h-28 w-28 rounded-2xl shadow-2xl"
+              className="h-20 w-auto drop-shadow-2xl"
             />
           </div>
 

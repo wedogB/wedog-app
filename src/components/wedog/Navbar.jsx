@@ -28,7 +28,7 @@ export default function Navbar({ variant = "transparent" }) {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to={createPageUrl("Home")}>
-          <img src={LOGO_URL} alt="WEDOG" className="h-10 w-10 rounded-lg object-cover" />
+          <img src="https://media.base44.com/images/public/699db1c3be9861723766da7c/a1a7f4e57_Colorlogo-nobackground.png" alt="WEDOG" className="h-8 w-auto" />
         </Link>
 
         {/* Desktop */}
