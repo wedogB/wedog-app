@@ -68,7 +68,7 @@ export default function EliWorkshop() {
             alt="סדנת אלי"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/85 via-[#2D5A3D]/70 to-[#FAF8F5]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1E3F2B]/95 via-[#2D5A3D]/90 to-[#FAF8F5]" style={{background: "linear-gradient(to bottom, rgba(30,63,43,0.95) 0%, rgba(45,90,61,0.92) 70%, rgba(250,248,245,1) 100%)"}} />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
