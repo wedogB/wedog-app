@@ -7,12 +7,12 @@ import Footer from "@/components/wedog/Footer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
 const stagger = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
+  visible: { transition: { staggerChildren: 0.12 } }
 };
 
 export default function WedogPack() {
@@ -28,8 +28,8 @@ export default function WedogPack() {
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
-          >
+            className="w-full h-full object-cover">
+            
             <source src="https://media.base44.com/videos/public/699db1c3be9861723766da7c/204c13c00_WhatsAppVideo2026-06-05at20517PM.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-[#2D5A3D]/90 via-[#2D5A3D]/85 via-70% to-[#FAF8F5]" />
@@ -38,19 +38,19 @@ export default function WedogPack() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-20"
-        >
+          className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-20">
+          
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
             יש כלבים שמטיילים פעמיים ביום,
             <br />
             <span className="text-[#a8d5b5]">ויש כלבים שיוצאים עם הלהקה.</span>
           </h1>
-          <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4">
-            להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ -
-            <br />
-            פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,
-            <br />
-            וכלב שחוזר הביתה עייף ומרוצה.
+          <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4">להקת WEDOG יוצאת כל יום לטיול של 7 ק"מ - פריקה אמיתית, סוציאליזציה, קצת אילוף בדרך,
+וכלב שחוזר הביתה עייף ומרוצה.
+
+
+
+
           </p>
           <p className="text-white font-semibold text-xl mb-10">
             הכלב שלכם לא צריך עוד טיול,
@@ -61,8 +61,8 @@ export default function WedogPack() {
             href="#contact-cta"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="inline-block px-10 py-4 bg-[#E8722A] text-white font-bold text-lg rounded-full shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors"
-          >
+            className="inline-block px-10 py-4 bg-[#E8722A] text-white font-bold text-lg rounded-full shadow-lg shadow-[#E8722A]/30 hover:bg-[#d4641f] transition-colors">
+            
             תרשמו אותי עכשיו
           </motion.a>
         </motion.div>
@@ -76,20 +76,20 @@ export default function WedogPack() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
-          >
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            
             {[
-              { icon: MapPin, text: "קלישר, שינקין, רוטשילד, לבונטין, נווה צדק, קריית ספר", label: "אזור פעילות" },
-              { icon: Clock, text: "8:30–10:00", label: "איסופים" },
-              { icon: Timer, text: "2–3 שעות", label: "משך טיול" },
-              { icon: Users, text: "עד 10 כלבים למוליך", label: "גודל קבוצה" },
-              { icon: Smartphone, text: "שריון דרך אפליקציה ייחודית", label: "הזמנה" },
-            ].map((item) => (
-              <motion.div
-                key={item.label}
-                variants={fadeUp}
-                className="flex items-start gap-4 bg-[#FAF8F5] rounded-xl p-5 border border-[#F5EDE4]"
-              >
+            { icon: MapPin, text: "קלישר, שינקין, רוטשילד, לבונטין, נווה צדק, קריית ספר", label: "אזור פעילות" },
+            { icon: Clock, text: "8:30–10:00", label: "איסופים" },
+            { icon: Timer, text: "2–3 שעות", label: "משך טיול" },
+            { icon: Users, text: "עד 10 כלבים למוליך", label: "גודל קבוצה" },
+            { icon: Smartphone, text: "שריון דרך אפליקציה ייחודית", label: "הזמנה" }].
+            map((item) =>
+            <motion.div
+              key={item.label}
+              variants={fadeUp}
+              className="flex items-start gap-4 bg-[#FAF8F5] rounded-xl p-5 border border-[#F5EDE4]">
+              
                 <div className="w-10 h-10 rounded-lg bg-[#2D5A3D]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <item.icon className="w-5 h-5 text-[#2D5A3D]" />
                 </div>
@@ -98,7 +98,7 @@ export default function WedogPack() {
                   <div className="text-gray-700 text-sm leading-snug">{item.text}</div>
                 </div>
               </motion.div>
-            ))}
+            )}
           </motion.div>
         </div>
       </section>
@@ -111,8 +111,8 @@ export default function WedogPack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+            
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3">
               מה בתוך הטיול
             </span>
@@ -123,24 +123,24 @@ export default function WedogPack() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
             {[
-              { title: "פריקה פיזית", desc: "7 ק\"מ של הליכה אמיתית עם חברה טובה" },
-              { title: "פריקה מנטלית", desc: "הליכה בקבוצה, התעלמות מגירויים, Recall, איפוק, אכילה מהרצפה" },
-              { title: "סוציאליזציה", desc: "חבורה קבועה, שחרור בגינה, תקשורת בריאה עם כלבים אחרים" },
-              { title: "אילוף בדרך", desc: "כי למה לא להפיק יותר מכל טיול" },
-            ].map((card) => (
-              <motion.div
-                key={card.title}
-                variants={fadeUp}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-[#F5EDE4] hover:shadow-lg transition-shadow duration-300"
-              >
+            { title: "פריקה פיזית", desc: "7 ק\"מ של הליכה אמיתית עם חברה טובה" },
+            { title: "פריקה מנטלית", desc: "הליכה בקבוצה, התעלמות מגירויים, Recall, איפוק, אכילה מהרצפה" },
+            { title: "סוציאליזציה", desc: "חבורה קבועה, שחרור בגינה, תקשורת בריאה עם כלבים אחרים" },
+            { title: "אילוף בדרך", desc: "כי למה לא להפיק יותר מכל טיול" }].
+            map((card) =>
+            <motion.div
+              key={card.title}
+              variants={fadeUp}
+              className="bg-white rounded-2xl p-8 shadow-sm border border-[#F5EDE4] hover:shadow-lg transition-shadow duration-300">
+              
                 <div className="w-2 h-8 bg-[#2D5A3D] rounded-full mb-4" />
                 <h3 className="text-xl font-bold text-[#2D5A3D] mb-2">{card.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{card.desc}</p>
               </motion.div>
-            ))}
+            )}
           </motion.div>
         </div>
       </section>
@@ -152,8 +152,8 @@ export default function WedogPack() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+            transition={{ duration: 0.6 }}>
+            
             <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-6">
               בשבילכם
             </span>
@@ -175,8 +175,8 @@ export default function WedogPack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-10"
-          >
+            className="mb-10">
+            
             <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D] mb-2">למה WEDOG</h2>
             <p className="text-gray-500 text-lg">כי זו לא שירות — זו להקה עם אישיות.</p>
           </motion.div>
@@ -185,24 +185,24 @@ export default function WedogPack() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="space-y-4"
-          >
+            className="space-y-4">
+            
             {[
-              { emoji: "📸", text: "תמונות שבועיות של הכלב שלכם בפעולה" },
-              { emoji: "📱", text: "אפליקציה ייחודית לשריון ומעקב" },
-              { emoji: "✅", text: "זמינות מלאה — תמיד יודעים מה קורה" },
-              { emoji: "🎓", text: "אילוף בתוך הטיול, לא רק פריקה" },
-              { emoji: "💚", text: "בנדנות ירוקות לכל חבר בלהקה" },
-            ].map((item) => (
-              <motion.li
-                key={item.text}
-                variants={fadeUp}
-                className="flex items-center gap-4 bg-[#FAF8F5] rounded-xl px-6 py-4 border border-[#F5EDE4]"
-              >
+            { emoji: "📸", text: "תמונות שבועיות של הכלב שלכם בפעולה" },
+            { emoji: "📱", text: "אפליקציה ייחודית לשריון ומעקב" },
+            { emoji: "✅", text: "זמינות מלאה — תמיד יודעים מה קורה" },
+            { emoji: "🎓", text: "אילוף בתוך הטיול, לא רק פריקה" },
+            { emoji: "💚", text: "בנדנות ירוקות לכל חבר בלהקה" }].
+            map((item) =>
+            <motion.li
+              key={item.text}
+              variants={fadeUp}
+              className="flex items-center gap-4 bg-[#FAF8F5] rounded-xl px-6 py-4 border border-[#F5EDE4]">
+              
                 <span className="text-2xl flex-shrink-0">{item.emoji}</span>
                 <span className="text-gray-700 font-medium">{item.text}</span>
               </motion.li>
-            ))}
+            )}
           </motion.ul>
         </div>
       </section>
@@ -215,8 +215,8 @@ export default function WedogPack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+            
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3">
               הצטרפות ללהקה
             </span>
@@ -227,18 +227,18 @@ export default function WedogPack() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="space-y-6"
-          >
+            className="space-y-6">
+            
             {[
-              { step: "1", title: "שולחים הודעה ומספרים על הכלב", desc: "" },
-              { step: "2", title: "פגישת היכרות (150₪)", desc: "אני מגיע אליכם עם הכלב שלי, מכיר אתכם ואת הכלב, לוקח אותו לסיבוב ובודק התאמה" },
-              { step: "3", title: "הכלב מצטרף ללהקה 💚", desc: "" },
-            ].map((item) => (
-              <motion.div
-                key={item.step}
-                variants={fadeUp}
-                className="flex items-start gap-6 bg-white rounded-2xl p-7 shadow-sm border border-[#F5EDE4]"
-              >
+            { step: "1", title: "שולחים הודעה ומספרים על הכלב", desc: "" },
+            { step: "2", title: "פגישת היכרות (150₪)", desc: "אני מגיע אליכם עם הכלב שלי, מכיר אתכם ואת הכלב, לוקח אותו לסיבוב ובודק התאמה" },
+            { step: "3", title: "הכלב מצטרף ללהקה 💚", desc: "" }].
+            map((item) =>
+            <motion.div
+              key={item.step}
+              variants={fadeUp}
+              className="flex items-start gap-6 bg-white rounded-2xl p-7 shadow-sm border border-[#F5EDE4]">
+              
                 <div className="w-12 h-12 rounded-full bg-[#2D5A3D] text-white font-bold text-xl flex items-center justify-center flex-shrink-0">
                   {item.step}
                 </div>
@@ -247,15 +247,15 @@ export default function WedogPack() {
                   {item.desc && <p className="text-gray-600 leading-relaxed">{item.desc}</p>}
                 </div>
               </motion.div>
-            ))}
+            )}
           </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-center text-gray-500 mt-8 text-sm leading-relaxed"
-          >
+            className="text-center text-gray-500 mt-8 text-sm leading-relaxed">
+            
             זה לא סתם תהליך — זה מה שמבטיח שכל כלב בלהקה מרגיש בטוח ושייך.
           </motion.p>
         </div>
@@ -269,8 +269,8 @@ export default function WedogPack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm"
-          >
+            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm">
+            
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4">
               תמחור
             </span>
@@ -290,8 +290,8 @@ export default function WedogPack() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative z-10 max-w-2xl mx-auto text-center"
-        >
+          className="relative z-10 max-w-2xl mx-auto text-center">
+          
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-8">
             רוצים שהכלב שלכם יצטרף ללהקה?
           </h2>
@@ -299,14 +299,14 @@ export default function WedogPack() {
             href="mailto:hello@wedog.co.il"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="inline-block px-10 py-4 bg-[#E8722A] text-white font-bold text-lg rounded-full shadow-lg shadow-black/20 hover:bg-[#d4641f] transition-colors"
-          >
+            className="inline-block px-10 py-4 bg-[#E8722A] text-white font-bold text-lg rounded-full shadow-lg shadow-black/20 hover:bg-[#d4641f] transition-colors">
+            
             שלחו הודעה ונתחיל בפגישת היכרות
           </motion.a>
         </motion.div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 }
