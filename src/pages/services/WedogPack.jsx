@@ -151,7 +151,7 @@ export default function WedogPack() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}>
             
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-6 hidden">
               בשבילכם
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">מה אתם מקבלים</h2>
@@ -214,7 +214,7 @@ export default function WedogPack() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
             
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-3 hidden">
               הצטרפות ללהקה
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D]">איך מצטרפים?</h2>
@@ -266,7 +266,7 @@ export default function WedogPack() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm">
+            className="bg-[#FAF8F5] border border-[#2D5A3D]/20 rounded-2xl p-10 text-center shadow-sm hidden">
             
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4">
               תמחור
