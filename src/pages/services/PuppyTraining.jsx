@@ -68,6 +68,9 @@ const steps = [
 ];
 
 export default function PuppyTraining() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-[#FAF8F5]" dir="rtl">
       <Navbar variant="solid" />

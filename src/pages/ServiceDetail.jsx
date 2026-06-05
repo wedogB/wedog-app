@@ -45,6 +45,10 @@ export default function ServiceDetail() {
   const { serviceId } = useParams();
   const service = servicesData[serviceId];
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [serviceId]);
+
   if (!service) {
     return (
       <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center" dir="rtl">

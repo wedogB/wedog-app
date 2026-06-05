@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Clock, Timer, Users, Smartphone } from "lucide-react";
 import Navbar from "@/components/wedog/Navbar";
@@ -15,6 +15,8 @@ const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.12 } }
 };
+
+
 
 function BenefitsTabs() {
   const [activeTab, setActiveTab] = useState("dog");
@@ -102,6 +104,10 @@ function BenefitsTabs() {
 }
 
 export default function WedogPack() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#FAF8F5]" dir="rtl">
       <Navbar variant="solid" />
