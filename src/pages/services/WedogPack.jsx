@@ -26,10 +26,10 @@ function BenefitsTabs() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-10">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-[#2D5A3D]/10 text-[#2D5A3D] text-sm font-semibold mb-4 hidden">
             מה בתוך הטיול
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D] mb-8">מה מקבלים</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2D5A3D] mb-8 hidden">מה מקבלים</h2>
           <div className="inline-flex rounded-full bg-white border border-[#2D5A3D]/20 p-1 shadow-sm">
             <button
               onClick={() => setActiveTab("dog")}
